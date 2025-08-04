@@ -22,6 +22,11 @@ sudo snap install docker
 
 ```bash
 mkdir n8n-server
+```
+
+## Création d'un dossier pour autoriser les échanges de données dans le dossier n8n-server
+```bash
+mkdir n8n-data
 sudo chown -R 1000:1000 n8n-data/
 sudo chmod -R 755 n8n-data/
 ```
