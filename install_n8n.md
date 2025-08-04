@@ -43,7 +43,7 @@ curl -sSL https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
 ### Ajouter son Token dans la config Ngrok
 
 ```bash
-ngrok config add-authtoken [YOUR_API_TOKEN]
+ngrok config add-authtoken [YOUR_API_TOKEN] # Ajoutez votre clé API Ngrok
 ```
 
 ## Création d'un environnement pour les paramètres n8n
@@ -56,16 +56,16 @@ vim .env
 
 ```env
 N8N_BASIC_AUTH_ACTIVE=true
-N8N_BASIC_AUTH_USER=Admin
-N8N_BASIC_AUTH_PASSWORD=admin123
+N8N_BASIC_AUTH_USER=Admin #Choisissez votre USER
+N8N_BASIC_AUTH_PASSWORD=admin123 # Choisissez votre mot de passe
 
-N8N_HOST=[YOUR_IPV4_FROM_AWS_INSTANCE]
+N8N_HOST=[YOUR_IPV4_FROM_AWS_INSTANCE] #Copiez-collez votre adresse ipv4 de votre instance AWS
 N8N_PORT=5678
 
 N8N_COMMUNITY_PACKAGE_ALLOW_TOOL_USAGE=True
 
-N8N_EDITOR_BASE_URL=[YOUR_LINK_NGROK]
-WEBHOOK_URL=[YOUR_LINK_NGROK]
+N8N_EDITOR_BASE_URL=[YOUR_LINK_NGROK] #Collez votre lien endpoint Ngrok
+WEBHOOK_URL=[YOUR_LINK_NGROK] #Collez votre lien endpoint Ngrok
 
 N8N_DEFAULT_BINARY_DATA_MODE=filesystem
 NODE_ENV=production
