@@ -39,17 +39,17 @@ Assurez-vous que votre système est à jour :
 sudo apt-get update
 sudo apt-get upgrade -y
 ```
-### Pull latest (stable) version
+### Mettre à jour la dernière version
 ```bash
 docker pull docker.n8n.io/n8nio/n8n
 ```
 
-### Pull specific version
+### Mettre à jour une version spécifique
 ```bash
 docker pull docker.n8n.io/n8nio/n8n:1.81.0
 ```
 
-### Pull next (unstable) version
+### Mettre à jour (instable) version
 ```bash
 docker pull docker.n8n.io/n8nio/n8n:next
 ```
