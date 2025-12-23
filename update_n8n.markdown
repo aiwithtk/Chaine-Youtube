@@ -39,6 +39,20 @@ Assurez-vous que votre système est à jour :
 sudo apt-get update
 sudo apt-get upgrade -y
 ```
+### Pull latest (stable) version
+```bash
+docker pull docker.n8n.io/n8nio/n8n
+```
+
+### Pull specific version
+```bash
+docker pull docker.n8n.io/n8nio/n8n:1.81.0
+```
+
+### Pull next (unstable) version
+```bash
+docker pull docker.n8n.io/n8nio/n8n:next
+```
 
 ### 4. Mettre à jour l'image Docker de n8n
 1. **Naviguez vers le dossier du projet** :
