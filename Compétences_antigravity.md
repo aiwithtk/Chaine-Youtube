@@ -16,13 +16,13 @@ Pensez aux skills comme des **manuels d'instructions spécialisés** pour les as
 
 Ce dépôt contient **233 skills prêtes à l'emploi** organisées dans le dossier `skills/`. Chaque skill est un dossier contenant au moins un fichier : `SKILL.md`
 
-skills/  
-├── brainstorming/  
-│   └── SKILL.md          ← La définition de la skill  
-├── stripe-integration/  
-│   └── SKILL.md  
-├── react-best-practices/  
-│   └── SKILL.md  
+skills/
+├── brainstorming/
+│   └── SKILL.md          ← La définition de la skill
+├── stripe-integration/
+│   └── SKILL.md
+├── react-best-practices/
+│   └── SKILL.md
 └── ... (176 skills supplémentaires)
 
 ---
@@ -33,101 +33,95 @@ skills/
 
 Copiez les skills dans le répertoire de votre outil IA :
 
-\# Pour la plupart des outils IA (Claude Code, Gemini CLI, etc.)  
+# Pour la plupart des outils IA (Claude Code, Gemini CLI, etc.)
 git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+```
 
-### **Étape 2 : Utiliser une Skill**
+### Étape 2 : Utiliser une Skill
 
 Dans votre chat IA, mentionnez la skill :
-
+```
 @brainstorming aide-moi à concevoir une application todo
+```
 
 ou
-
+```
 /stripe-integration ajoute un traitement des paiements à mon application
+```
 
-### **Étape 3 : L'IA devient un Expert**
+### Étape 3 : L'IA devient un Expert
 
-L'IA charge les connaissances de cette skill et vous aide avec une expertise spécialisée \!
-
----
-
-## **Quels outils IA fonctionnent avec ceci ?**
-
-| Outil | Compatible ? | Chemin d'installation |
-| ----- | ----- | ----- |
-| **Claude Code** | ✅ Oui | `.claude/skills/` ou `.agent/skills/` |
-| **Gemini CLI** | ✅ Oui | `.gemini/skills/` ou `.agent/skills/` |
-| **Cursor** | ✅ Oui | `.cursor/skills/` |
-| **GitHub Copilot** | ⚠️ Partiel | Copier dans `.github/copilot/` |
-| **Antigravity IDE** | ✅ Oui | `.agent/skills/` |
+L'IA charge les connaissances de cette skill et vous aide avec une expertise spécialisée !
 
 ---
 
-## **Catégories de Skills (Simplifiées)**
+## Quels outils IA fonctionnent avec ceci ?
 
-### **Créatif & Design (10 skills)**
+| Outil               | Compatible ? | Chemin d'installation                 |
+| ------------------- | ------------ | ------------------------------------- |
+| **Claude Code**     | ✅ Oui       | `.claude/skills/` ou `.agent/skills/` |
+| **Gemini CLI**      | ✅ Oui       | `.gemini/skills/` ou `.agent/skills/` |
+| **Cursor**          | ✅ Oui       | `.cursor/skills/`                     |
+| **GitHub Copilot**  | ⚠️ Partiel   | Copier dans `.github/copilot/`        |
+| **Antigravity IDE** | ✅ Oui       | `.agent/skills/`                      |
+
+---
+
+## Catégories de Skills (Simplifiées)
+
+### **Créatif & Design** (10 skills)
 
 Créez de belles choses : design UI, art, thèmes, composants web
 
-* Essayez : `@frontend-design`, `@canvas-design`, `@ui-ux-pro-max`
+- Essayez : `@frontend-design`, `@canvas-design`, `@ui-ux-pro-max`
 
-### **Développement (25 skills)**
+### **Développement** (25 skills)
 
 Écrivez un meilleur code : tests, débogage, patterns React, architecture
 
-* Essayez : `@test-driven-development`, `@systematic-debugging`, `@react-best-practices`
+- Essayez : `@test-driven-development`, `@systematic-debugging`, `@react-best-practices`
 
-### **Sécurité (50 skills)**
+### **Sécurité** (50 skills)
 
 Outils de hacking éthique et tests de pénétration
 
-* Essayez : `@ethical-hacking-methodology`, `@burp-suite-testing`
+- Essayez : `@ethical-hacking-methodology`, `@burp-suite-testing`
 
-### **IA & Agents (30 skills)**
+### **IA & Agents** (30 skills)
 
 Construisez des applications IA : RAG, LangGraph, prompt engineering, agents vocaux
 
-* Essayez : `@rag-engineer`, `@prompt-engineering`, `@langgraph`
+- Essayez : `@rag-engineer`, `@prompt-engineering`, `@langgraph`
 
-### **Documents (4 skills)**
+### **Documents** (4 skills)
 
 Travaillez avec des fichiers Word, Excel, PowerPoint, PDF
 
-* Essayez : `@docx-official`, `@xlsx-official`, `@pdf-official`
+- Essayez : `@docx-official`, `@xlsx-official`, `@pdf-official`
 
-### **Marketing (23 skills)**
+### **Marketing** (23 skills)
 
 Développez votre produit : SEO, rédaction, publicités, campagnes email
 
-* Essayez : `@copywriting`, `@seo-audit`, `@page-cro`
+- Essayez : `@copywriting`, `@seo-audit`, `@page-cro`
 
-### **Intégrations (25 skills)**
+### **Intégrations** (25 skills)
 
 Connectez-vous aux services : Stripe, Firebase, Twilio, Discord, Slack
 
-* Essayez : `@stripe-integration`, `@firebase`, `@clerk-auth`
+- Essayez : `@stripe-integration`, `@firebase`, `@clerk-auth`
 
 ---
 
-## **Votre première Skill : Un exemple rapide**
+## Votre première Skill : Un exemple rapide
 
 Essayons la skill **brainstorming** :
 
 1. **Ouvrez votre assistant IA** (Claude Code, Cursor, etc.)
 
-**Tapez ceci :**
-
- @brainstorming Je veux créer une simple application météo
-
-2.   
-3. **Ce qui se passe :**
-
-   * L'IA charge la skill brainstorming  
-   * Elle vous pose des questions une par une  
-   * Elle vous aide à concevoir l'application avant de coder  
-   * Elle crée un document de conception pour vous  
-4. **Résultat :** Vous obtenez un plan bien pensé au lieu de vous lancer directement dans le code \!
+2. **Tapez ceci :**
+```
+   @brainstorming Je veux créer une simple application météo
 
 ---
 
